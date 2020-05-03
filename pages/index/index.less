@@ -1,0 +1,58 @@
+.index_swiper{
+  swiper{
+    width: 750rpx;
+    height: 340rpx;
+    image{
+      width: 100%;
+    }
+  }
+}
+
+
+.index_cate{
+  display: flex;
+  navigator{
+    padding: 20rpx;
+    flex: 1;
+    image{
+      width: 100%;
+
+    }
+
+  }
+
+}
+
+
+.index_floor{
+  .floor_group{
+    .floor_title{
+      padding: 10rpx 0;
+      image{width: 100%;}
+    }
+    .floor_list{
+      navigator{
+          float: left;
+          width: 33.33%;
+
+      &:nth-last-child(-n+4){
+        height: 33.33vw * 386/232/2;
+
+        border-left: 10rpx solid #fff;
+      }
+      &:nth-child(2),
+      &:nth-child(3){
+        border-bottom: 10rpx solid #fff;
+      }
+      image{
+        width: 100%;
+        height: 100%;
+      }
+      }
+
+    }
+
+  }
+
+
+}

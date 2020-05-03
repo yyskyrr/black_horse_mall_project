@@ -1,0 +1,21 @@
+<tabs tabs="{{tabs}}" bind:tabsitemchange="handletabsitemchange">
+    <view class="order_main">
+    <view 
+    wx:for="{{orders}}"
+    wx:key="order_id"
+    class="order_item">
+    <view class="order_no_row">
+    <view class="order_no_text">订单编号</view>
+    <view class="order_no_value">{{item.order_number}}</view>
+    </view>
+    <view class="order_price_row">
+    <view class="order_price_text">订单价格</view>
+    <view class="order_price_value">￥{{itemorder_price}}</view>
+    </view>
+    <view class="order_time_row">
+    <view class="order_time_text">订单时间</view>
+    <view class="order_time_value">{{item.create_time_cn}}</view>
+    </view>
+    </view>
+    </view>
+</tabs>

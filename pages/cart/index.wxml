@@ -1,0 +1,65 @@
+<view class="recevice_address_row">
+    <view class="address_btn" wx:if="{{!address.userName}}">
+        <button bindtap="handlechoose" type="primary" plain="true">获取收货地址</button>
+    </view>
+    <view wx:else class="user_info_row">
+        <view class="user_info">
+            <view >{{address.userName}}</view>
+            <view>{{address.all}}</view>
+        </view>
+        <view class="user_phone">{{address.telNumber}}</view>
+    </view>
+</view>
+
+<view class="cart_content">
+    <view class="cart_title">购物车</view>
+    <view class="cart_main">
+        <block wx:if="{{cart.length!=0}}">
+            <view class="cart_item" wx:for="{{cart}}" wx:key="goods_id">
+                <view class="cart_chk_wrap">
+                    <checkbox-group data-id="{{item.goods_id}}" bindchange="handleitemchange">
+                        <checkbox checked="{{item.checked}}" />
+                    </checkbox-group>
+                </view>
+                <navigator class="cart_img_wrap">
+                    <image mode="widthFix" src="{{item.goods_small_logo}}" />
+                </navigator>
+                <view class="cart_info_wrap">
+                    <view class="goods_name">{{item.goods_name}}</view>
+                    <view class="goods_price_wrap">
+                        <view class="goods_price">￥{{item.goods_price}}</view>
+                        <view class="cart_num_tool">
+                            <view bind:tap="handleitemnumedit" data-id="{{item.goods_id}}" data-operation="{{-1}}" class="num_edit">
+                                -
+                            </view>
+                            <view class="goods_num">{{item.num}}</view>
+                            <view bind:tap="handleitemnumedit" data-id="{{item.goods_id}}" data-operation="{{1}}" class="num_edit">
+                                +
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+        <block wx:else>
+            <image mode="widthFix" src="http://img.mp.itc.cn/upload/20170401/2f523043409747a9b68c1bcf6fd353a5_th.jpeg"/>
+        </block>
+    </view>
+</view>
+
+<view class="footer_tool">
+    <view class="all_chk_wrap">
+        <checkbox-group bindchange="handleitemallcheck">
+            <checkbox checked="{{allchecked}}"  />全选
+        </checkbox-group>
+    </view>
+    <view class="total_price_wrap">
+        <view class="total_price">
+            合计:<text class="text">￥{{totalprice}}</text>
+        </view>
+        <view >包含运费</view>
+    </view>
+    <view class="order_pay_wrap" bind:tap="handlepay">
+        结算({{totalnum}})
+    </view>
+</view>
