@@ -5,7 +5,7 @@
     <navigator class="goods_item"
     wx:for="{{goodslist}}"
     wx:key="goods_id"
-    url="/pages/goods_detail/index?goods_id={{item.goods_id}}"
+    url="/pages/goods_detail/main?goods_id={{item.goods_id}}"
     >
         <view class="goods_img">
         <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'http://image5.suning.cn/uimg/b2c/newcatentries/0000000000-000000000193373779_1_400x400.jpg'}}"></image>
