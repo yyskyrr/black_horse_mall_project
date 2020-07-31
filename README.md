@@ -1,1 +1,1 @@
-# black_horse_mall_project
+黑马电商小程序，功能已实现纯手打，适合萌新学习，来了可以点个小star
