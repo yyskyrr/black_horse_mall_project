@@ -54,8 +54,11 @@ wx-Page({
 
     request({ url: '/home/floordata'})
     .then(result => {
+      var data =JSON.stringify(result.data.message);
+      var data1=data.replace(/goods_list/g, 'goods_list/index')
+      var data2=JSON.parse(data1)
       this.setData({
-        floorlist:result.data.message
+        floorlist:data2,
       })
     })
     
