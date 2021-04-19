@@ -3,7 +3,7 @@
     <h2>介绍</h2>
   <p>品优购，微信小程序电商项目，功能已实现，适合学习，可以点个小star</p>
 </div>
-  <img src='https://www.hualigs.cn/image/607da83d54e7b.jpg'/>
+  <img src='https://ae01.alicdn.com/kf/Ua1890071ac0446a2b87059930574faa7g.jpg'/>
   <img src='https://www.hualigs.cn/image/607da83ce83e3.jpg'/>
   <img src='https://www.hualigs.cn/image/607da83cb3d9a.jpg'/>
   <img src='https://www.hualigs.cn/image/607da83c7f874.jpg'/>
