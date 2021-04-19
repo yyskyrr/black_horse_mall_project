@@ -3,7 +3,8 @@
     <h2>介绍</h2>
   <p>品优购，微信小程序电商项目，功能已实现，适合学习，可以点个小star</p>
 </div>
-  <div>商品首页</div>
+  ###<div>商品首页</div>
+  ###首页
   <img src='https://ae01.alicdn.com/kf/U16e0c95a9f1f4699ae7566a7e9aed1857.jpg'/>
   <div>搜索</div>
   <img src='https://ae01.alicdn.com/kf/Ua1890071ac0446a2b87059930574faa7g.jpg'/>
