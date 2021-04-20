@@ -1,7 +1,7 @@
 <div>
   <h1>mini_apps</h1>
     <h2>介绍</h2>
-  <p>品优购，微信小程序电商项目，功能已实现，适合学习，可以点个小star</p>
+  <p>品优购，微信小程序电商项目，适合各位拿来学习，可以动动发财的小手点个小star⭐</p>
 </div>
   <h2>商品首页</h2>
   <img src='https://ae01.alicdn.com/kf/U16e0c95a9f1f4699ae7566a7e9aed1857.jpg'/>
